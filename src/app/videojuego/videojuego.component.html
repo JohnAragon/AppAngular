@@ -1,0 +1,13 @@
+<button (click)="ocultarComponent(false)" *ngIf=mostrar_videojuego >Ocultar</button>
+<button (click)="ocultarComponent(true)" *ngIf="!mostrar_videojuego">Mostrar</button>
+<button (click)="cambiarTitulo()">Cambiar</button>
+<div *ngIf="mostrar_videojuego">
+	<h2>{{ titulo }}</h2>
+	<b>{{ listado }}</b>
+	<ul>
+		<li>Gta</li>
+		<li>Resident Evil</li>
+		<li>Fifa 2019</li>
+		<li>Mario Kart</li>
+	</ul>
+</div>	
